@@ -11,15 +11,12 @@ services:
       MYSQL_USER: mamiko
       MYSQL_PASSWORD: mamikoprogram
     volumes:
-    - db-data:/var/lib/mysql
+      - ./mysql/data:/var/lib/mysql
   php:
     build: ./php
     depends_on:
-    - db
+      - db
     ports:
-    - 8000:8000
+      - 8080:8000
     volumes:
-    - ./work:/work
-
-volumes:
-  db-data:
+      - ./work:/work
