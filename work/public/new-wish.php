@@ -4,18 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wish List</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>New Wish</title>
 </head>
 <body>
   <main>
-    <h1>Wish List</h1>
-    <div>
-    <input type="button" value="Wishを追加" onclick="location.href='new-wish.php'">
-    </div>
-
-
+    <h2>My Wish</h2>
+      <input type="textarea">
+    <h2>Memo</h2>
+    <input type="textarea">
+    <input type="submit" value="Wishを追加">
   </main>
+
   <script src="main.js"></script>
 </body>
 </html>
